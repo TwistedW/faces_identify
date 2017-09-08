@@ -1,5 +1,5 @@
 import cv2
-filename = 'face4.jpg'
+filename = 'face2.jpg'
 
 face_cascade=cv2.CascadeClassifier('E:\opencv\opencv\sources\data\haarcascades\haarcascade_frontalface_default.xml')
 
