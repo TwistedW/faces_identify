@@ -1,6 +1,6 @@
 #    __author__ = '武广'
 #    __date__ = '2017/5/5'
-#    __Desc__ = 人脸检测小例子，以圆圈圈出人脸
+#    __Desc__ = 人脸检测小例子，圈出人脸
 import cv2
 def image_size_transform(ResizeImg, w2, h2):
     if h2 > 700:
@@ -15,7 +15,7 @@ if __name__ == '__main__':
     face_cascade = cv2.CascadeClassifier("E:\opencv\opencv\sources\data\haarcascades\haarcascade_frontalface_default.xml")
 
     # 读取图片
-    image = cv2.imread("face11.jpg")
+    image = cv2.imread("face10.jpg")
     image = image_size_transform(image, image.shape[1], image.shape[0])
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     # w = image.shape[1]
